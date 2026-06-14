@@ -1,0 +1,10 @@
+@import './base.css';
+
+/*可拖拽区域*/
+.drag-regin{
+app-region: drag;
+}
+/*不可拖拽区域*/
+.no-drag{
+app-region: no-drag;
+}

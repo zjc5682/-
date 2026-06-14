@@ -1,0 +1,47 @@
+:root {
+    /* 覆盖el框架的变量 */
+    /* 主色调 */
+    --color-primary: #fc3641;
+    /* 主色调hover */
+    --color-primary-hover: #de2f3b;
+    /* 主色调按下 */
+    --color-primary-press: #e98087;
+    /* 主色调禁用 */
+    --color-primary-disabled: #fec5c9;
+    /* 鼠标悬停上背景颜色 */
+    --my-hover: #e3e6ec;
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        /* 深色主题下鼠标悬停上的背景颜色 */
+        --my-hover: #27272e;
+    }
+}
+
+.custom-class {
+    /* 主色调 */
+    /* 主色调按钮默认背景 */
+    --el-color-primary: var(--color-primary);
+    /* 主色调按钮hover状态 */
+    --el-color-primary-light-3: var(--color-primary-hover);
+    /* 主色调按钮按下颜色 */
+    --el-color-primary-dark-2: var(--color-primary-press);
+    /* 主色调禁用颜色 */
+    --el-color-primary-light-5: var(--color-primary-disabled);
+}
+
+/* 深色模式下的主色调 */
+@media(prefers-color-scheme: dark) {
+    .custom-class {
+        /* 主色调 */
+        /* 主色调按钮默认背景 */
+        --el-color-primary: var(--color-primary);
+        /* 主色调按钮hover状态 */
+        --el-color-primary-light-3: var(--color-primary-hover);
+        /* 主色调按钮按下颜色 */
+        --el-color-primary-dark-2: var(--color-primary-press);
+        /* 主色调禁用颜色 */
+        --el-color-primary-light-5: var(--color-primary-disabled);
+    }
+}
